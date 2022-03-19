@@ -1,9 +1,7 @@
 #include <iostream>
-#include <math.h>
-#include <iomanip>
 using namespace std;
 
-bool isprime(int num)
+bool isPrimeValue(int num)
 {
     if (num <= 1)
         return true;
@@ -19,11 +17,11 @@ bool isprime(int num)
 
 int main()
 {
-
     int total = 0;
     int count = 0;
     int start, end;
     int prev = 1;
+    int special = 1;
 
     cout << "Enter two positive integers < 1,000,000,000: ";
     cin >> start >> end;
@@ -36,10 +34,18 @@ int main()
     {
         for (int i = start; i < end; i++)
         {
-            if (isprime(i))
+            if (isPrimeValue(i))
             {
-                if (i - prev == 2){
+                if (i - prev == 2)
+                {
                     cout << prev << " and " << i << " are twin primes." << endl;
+                    count += 1;
+                }
+                // special case 1 and 3
+                else if (i - special == 2)
+                {
+                    cout << special << " and " << i << " are twin primes." << endl;
+                    count += 1;
                 }
                 prev = i;
                 total += i;
