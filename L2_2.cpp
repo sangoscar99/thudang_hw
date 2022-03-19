@@ -74,7 +74,7 @@ int main()
         cin >> sSellingprice;
 
         totalReveneu = (area1 * fSellingprice) + (area2 * sSellingprice);
-        proFit = totalReveneu - (fTotal* area1 + sTotal * area2);
+        proFit = totalReveneu - (fTotal * area1 + sTotal * area2);
     }
 
     else
