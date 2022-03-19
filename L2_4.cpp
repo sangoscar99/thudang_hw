@@ -17,23 +17,27 @@ int main() {
             break;
         }
         if (diff >= 50) {
-            cout << "The guess is very ";
+            cout << "\nThe guess is very ";
         }
         else if (diff >= 30) {
-            cout << "The guess is ";
+            cout << "\nThe guess is ";
         }
         else if (diff >= 15) {
-            cout << "The guess is moderately ";
+            cout << "\nThe guess is moderately ";
         }
         else {
-            cout << "The guess is somewhat ";
+            cout << "\nThe guess is somewhat ";
         }
+
+
         if (guess > num) {
             cout << "high." << endl;
         }
         else {
             cout << "low." << endl;
         }
+        cout << "Guess again!" << endl;
+        
     }
 
     if (guess == num) {

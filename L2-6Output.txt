@@ -1,9 +1,5 @@
-43 67 82 0 35 28 -64 7 -87 0 
-0 0 0 12 23 45 7 -2 -8 -3 
--9 0 4 1 0 -7 23 -24 0 0 
-12 62 100 101 -203 -340 500 0 23 0 
-54 0 76 
- There are 27 evens,which also includes 12
- Total number of odds are: 16
-Sum: 558
- Average: 27evens, which also includes 12zeros,
+
+There are 27 evens, which also includes 12 zeros
+Total number of odds are: 16
+The sum of numbers: 558
+The average is : 12
